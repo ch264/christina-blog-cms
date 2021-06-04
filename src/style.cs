@@ -1,4 +1,4 @@
-/* CSS Custom Properties Definitions */
+CSS Custom Properties Definitions
 
 :root {
   --maxWidth-none: "none";

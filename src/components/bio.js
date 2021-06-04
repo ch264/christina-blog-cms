@@ -31,10 +31,9 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <div className="bio mb-16  flex flex-row">
       <StaticImage
-        className="bio-avatar"
-        layout="fixed"
+        className="bio-avatar mr-4 mb-0 rounded-full inline-block"
         formats={["AUTO", "WEBP", "AVIF"]}
         src="../images/profile-pic.png"
         width={50}
@@ -43,7 +42,7 @@ const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
+        <p className="">
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
