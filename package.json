@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "code-with-christina",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Christina Hastenrath <christinavhastenrath@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ch264/christina-blog-cms/issues"
   },
   "dependencies": {
     "gatsby": "^3.6.2",

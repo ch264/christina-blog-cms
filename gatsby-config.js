@@ -3,14 +3,27 @@ module.exports = {
     title: `Code with Christina`,
     author: {
       name: `Christina Hastenrath`,
-      summary: `It's not a jungle out there, it's a community`,
+      summary: `. Software Engineer Postmanaut @ Postman 👩‍🚀`,
     },
     description: `Christina's blog to share learnings`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `ettinchen`,
-    },
-  },
+    social: [
+      {
+        twitter: `ettinchen`,
+      },
+      {
+        LinkedIn: "https://www.linkedin.com/in/christinahastenrath/",
+      },
+      {
+        Medium: "https://medium.com/@christina.hastenrath",
+      },
+      {
+        GitHub: "https://github.com/ch264",
+      },
+      {
+        Dev: "https://dev.to/christinahastenrath",
+      },
+    ],
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify-cms`,
@@ -129,4 +142,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+},}

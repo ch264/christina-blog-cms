@@ -14,26 +14,26 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Link className="header-link-home font-bold text-5xl" to="/">
+      <Link className="header-link-home font-bold text-2xl" to="/">
         {title}
       </Link>
     )
   }
 
   return (
-    <div className="container mx-auto p-10" data-is-root-path={isRootPath}>
+    <div className="container mx-auto p-12" data-is-root-path={isRootPath}>
       <header className="mb-8">{header}</header>
       <main>{children}</main>
       <footer className="p-6">
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a> 
+        <a href="https://www.gatsbyjs.com" className="font-bold">Gatsby</a> 
         {` `}
         on {` `}
-        <a href="https://www.gatsbyjs.com">Netlify CMS</a>{` `}
+        <a href="https://www.netlifycms.org/" className="font-bold">Netlify CMS</a>{` `}
         and styled with
         {` `}
-        <a href="https://www.gatsbyjs.com">Tailwind CSS</a>
+        <a href="https://www.gatsbyjs.com" className="font-bold">Tailwind CSS</a> {` `} 🚀
       </footer>
     </div>
   )

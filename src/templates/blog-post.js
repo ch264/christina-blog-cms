@@ -21,16 +21,17 @@ const BlogPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline" className="font-bold">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header className="font-sans">
+          <h1 itemProp="headline" className="font-bold font-black mt-12 mb-6 text-5xl">{post.frontmatter.title}</h1>
+          <p className="text-2xl font-thin p-0 mb-8">{post.frontmatter.date}</p>
         </header>
         <section
+          className="cms-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
         <hr />
-        <footer>
+        <footer className="pt-6">
           <Bio />
         </footer>
       </article>

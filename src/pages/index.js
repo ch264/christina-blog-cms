@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
-      <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5"> 
+      <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5"> 
         {/* <Card /> */}
         {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
@@ -40,7 +40,7 @@ const BlogIndex = ({ data, location }) => {
               )
         })}
       </div>
-      <ol style={{ listStyle: `none` }}>
+      {/* <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -71,7 +71,7 @@ const BlogIndex = ({ data, location }) => {
             </li>
           )
         })}
-      </ol>
+      </ol> */}
     </Layout>
   )
 }
