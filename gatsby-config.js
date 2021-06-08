@@ -7,23 +7,13 @@ module.exports = {
     },
     description: `Christina's blog to share learnings`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: [
-      {
+    social: {
         twitter: `ettinchen`,
-      },
-      {
         LinkedIn: "https://www.linkedin.com/in/christinahastenrath/",
-      },
-      {
         Medium: "https://medium.com/@christina.hastenrath",
-      },
-      {
         GitHub: "https://github.com/ch264",
-      },
-      {
         Dev: "https://dev.to/christinahastenrath",
       },
-    ],
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify-cms`,
