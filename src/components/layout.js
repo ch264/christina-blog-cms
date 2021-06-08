@@ -21,7 +21,7 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
-    <div className="container mx-auto p-12" data-is-root-path={isRootPath}>
+    <div className="container mx-auto p-20" data-is-root-path={isRootPath}>
       <header className="mb-8">{header}</header>
       <main>{children}</main>
       <footer className="p-6">

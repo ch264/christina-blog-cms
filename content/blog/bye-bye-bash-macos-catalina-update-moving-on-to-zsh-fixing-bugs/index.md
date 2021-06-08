@@ -2,6 +2,11 @@
 title: Bye Bye Bash! MacOS Catalina update, moving on to zsh, fixing bugs
 date: 2021-06-03T15:18:34.824Z
 description: "Tutorial: How to debug going from bash to zsh"
+hastag:
+    - React
+    - Redux
+    - Sass
+    - Jest
 ---
 Bye Bye Bash! MacOS Catalina update, moving on to zsh, fixing bugs
 

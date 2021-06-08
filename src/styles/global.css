@@ -7,6 +7,8 @@
 	@apply font-serif;
 }
 
-.gatsby-highlight  {
+
+
+.gatsby-highlight, hr  {
 	@apply mb-8
 }
