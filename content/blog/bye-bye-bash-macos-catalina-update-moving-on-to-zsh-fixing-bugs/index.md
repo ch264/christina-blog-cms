@@ -8,6 +8,8 @@ hastag:
     - Sass
     - Jest
 ---
+![Mac computer with microphone and clock](1__z7rtesdxpuyvgih-t59_w.jpeg)
+
 Bye Bye Bash! MacOS Catalina update, moving on to zsh, fixing bugs
 
 When I updated my macOS to Catalina I went from using bash to using zsh and ran into a few issues. This is a short Tutorial on how I fixed them.
