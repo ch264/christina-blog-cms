@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cms-content > p {
+	@apply mb-8;
+	@apply font-serif;
+}
+
+
+
+.gatsby-highlight, hr  {
+	@apply mb-8
+}

@@ -5,6 +5,9 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+
+// import parse from 'html-react-parser';
+
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -21,16 +24,17 @@ const BlogPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header className="font-sans">
+          <h1 itemProp="headline" className="font-bold font-black mt-12 mb-6 text-5xl">{post.frontmatter.title}</h1>
+          <p className="text-2xl font-thin p-0 mb-8">{post.frontmatter.date}</p>
         </header>
         <section
+          className="cms-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
         <hr />
-        <footer>
+        <footer className="pt-6">
           <Bio />
         </footer>
       </article>
