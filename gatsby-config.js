@@ -14,7 +14,8 @@ module.exports = {
         GitHub: "https://github.com/ch264",
         Dev: "https://dev.to/christinahastenrath",
       },
-  plugins: [
+    },
+  plugins:[
     `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
@@ -132,4 +133,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-},}
+}

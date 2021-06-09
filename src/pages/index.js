@@ -28,15 +28,18 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
-      <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5"> 
+      <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5"> 
         {/* <Card /> */}
         {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug;
+            const thumbnail = post.frontmatter.thumbnail || post.fields.slug;
             const slug = post.fields.slug;
-            const date = post.frontmatter.date;
+            const { date, hashtag } = post.frontmatter;
             const description = post.frontmatter.description || post.excerpt;
+
+          
             return (
-              <Card  key="slug" title={title} date={date} slug={slug} description={description} />
+              <Card  key={slug} title={title} date={date} slug={slug} description={description} thumbnail={thumbnail} hashtag={hashtag} />
               )
         })}
       </div>
@@ -95,6 +98,15 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          hashtag
+          thumbnail {
+            relativePath
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
         }
       }
     }
