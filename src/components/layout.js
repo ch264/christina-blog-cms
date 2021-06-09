@@ -24,7 +24,7 @@ const Layout = ({ location, title, children }) => {
     <div className="container mx-auto p-20" data-is-root-path={isRootPath}>
       <header className="mb-8">{header}</header>
       <main>{children}</main>
-      <footer className="p-6">
+      <footer className="p-6 mt-6">
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com" className="font-bold">Gatsby</a> 

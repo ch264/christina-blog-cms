@@ -12,10 +12,10 @@ const Card = ({title, slug, date, description, hashtag, thumbnail}) => {
 				<p className="text-gray-700 text-base">
 					{description}
 				</p>
-				<p className="text-gray-700 text-base">{date}</p>
+				<p className="text-gray-700 text-base font-thin">{date}</p>
 			</div>
 			<div className="px-6 pt-4 pb-2">
-				{ hashtag ? hashtag.map(tag => <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{tag}</span>) : ''}
+				{ hashtag ? hashtag.map(tag => <span key={slug} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{tag}</span>) : ''}
 			</div>
 		</div> 
 	)}
