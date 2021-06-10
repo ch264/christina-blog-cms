@@ -2,13 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* blog post style */
 .cms-content > p {
 	@apply mb-8;
 	@apply font-serif;
 }
-
-
-
 .gatsby-highlight, hr  {
 	@apply mb-8
+}
+
+/* share button style */
+
+.post-meta-share-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.post-meta-share-icons button {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  transition: all 0.2s ease-out;
+}
+
+.post-meta-share-icons svg {
+  color: var(--theme-ui-colors-secondary, #5f6c80);
+}
+
+.post-meta-share-icons button:hover {
+  transform: scale(1.15);
+}
+
+.post-meta-share-icons button:focus {
+  outline: 0;
+}
+
+.post-meta-share-icons button:last-child {
+  margin-right: 0;
 }
