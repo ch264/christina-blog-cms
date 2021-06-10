@@ -5,13 +5,17 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import ShareButtons from "../components/share-buttons"
+
 
 // import parse from 'html-react-parser';
 
 const BlogPostTemplate = ({ data, location }) => {
+  const url = typeof window !== 'undefined' ? window.location.href : '';
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -26,7 +30,9 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header className="font-sans">
           <h1 itemProp="headline" className="font-bold font-black mt-12 mb-6 text-5xl">{post.frontmatter.title}</h1>
-          <p className="text-2xl font-thin p-0 mb-8">{post.frontmatter.date}</p>
+          <p className="text-2xl font-thin p-0 mb-8">{post.frontmatter.date} - {post.frontmatter.hashtag ? post.frontmatter.hashtag.map(tag => (` ${tag}`)) : ''} - {post.timeToRead || ''} min read
+            <ShareButtons url={url} title={post.title} description={post.frontmatter.description}/>
+          </p>
         </header>
         <section
           className="cms-content"
@@ -34,6 +40,8 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
+        <p className=" flex justify-center"> <ShareButtons url={url} title={post.title} description={post.frontmatter.description} /></p>
+       
         <footer className="pt-6">
           <Bio />
         </footer>
@@ -85,10 +93,12 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        hashtag
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
