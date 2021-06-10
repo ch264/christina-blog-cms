@@ -4,7 +4,7 @@ date: 2021-06-10T23:20:52.024Z
 description: This is a tutorial to show you how I set up GitHub Actions for
   Markdown linting with David Ansons’s Markdownlint library.
 ---
-![](https://miro.medium.com/max/7528/1*agCoOF8taDQ9mDMhR15t3g.jpeg)
+![tea, scissors and keyboard](https://miro.medium.com/max/7528/1*agCoOF8taDQ9mDMhR15t3g.jpeg)
 
 # What is a Markdown linter?
 
@@ -29,7 +29,7 @@ The biggest plus for implementing GitHub actions was the removal of another thir
 ![](https://miro.medium.com/max/7588/1*AVTdp7pYzgtUGY9JqGbM_A.png)
 
 3. Create a .yml file with the name, when the linter should run and the actual command to run the linter. GitHub provides excellent Documentation on the side to support the setting up of your yml file.\
-I have set my linter to run on pull_request but you can also set it to push.
+   I have set my linter to run on pull_request but you can also set it to push.
 
 ![](https://miro.medium.com/max/60/1*9sVN2BcjvQDiYK4V9vGjhQ.png?q=20)
 
