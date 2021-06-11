@@ -8,6 +8,9 @@
 	@apply mb-8;
 	@apply font-sans;
 }
+.cms-content > h2 {
+	@apply text-2xl
+}
 .gatsby-highlight, hr  {
 	@apply mb-8
 }
