@@ -16,7 +16,7 @@ The biggest plus for implementing GitHub actions was the removal of another thir
 ## How we setup GitHub Actions CI Tool for Markdown linting
 1. Sign up the to GitHub Actions Beta
 
-![](https://miro.medium.com/max/60/1*7EY6RSl8eOPBho3gTz-EBA.png?q=20)
+![](https://miro.medium.com/max/1400/1*7EY6RSl8eOPBho3gTz-EBA.png)
 
 
 2. Go to the “Actions” tab and select: “set up workflow yourself”
