@@ -3,7 +3,7 @@ module.exports = {
     title: `Code with Christina 🦄`,
     author: {
       name: `Christina Hastenrath`,
-      summary: `Software Engineer @Postman 👩‍🚀`,
+      summary: `Software Engineer @Postman`,
     },
     description: `Christina's blog to share learnings`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,

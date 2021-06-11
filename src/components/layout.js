@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+import Footer from '../components/footer'
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
@@ -24,17 +26,7 @@ const Layout = ({ location, title, children }) => {
     <div className="container mx-auto p-20" data-is-root-path={isRootPath}>
       <header className="mb-8">{header}</header>
       <main>{children}</main>
-      <footer className="p-6 mt-6">
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com" className="font-bold">Gatsby</a> 
-        {` `}
-        on {` `}
-        <a href="https://www.netlifycms.org/" className="font-bold">Netlify CMS</a>{` `}
-        and styled with
-        {` `}
-        <a href="https://www.gatsbyjs.com" className="font-bold">Tailwind CSS</a> {` `} 🚀
-      </footer>
+      <Footer /> 
     </div>
   )
 }

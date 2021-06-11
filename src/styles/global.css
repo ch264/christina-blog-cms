@@ -7,9 +7,16 @@
 .cms-content > p {
 	@apply mb-8;
 	@apply font-sans;
+	@apply leading-8;
+}
+.cms-content > ol {
+	@apply mb-8;
+	@apply list-decimal;
+  @apply list-inside;
 }
 .cms-content > h2 {
-	@apply text-2xl
+	@apply text-2xl;
+	@apply mb-6;
 }
 .gatsby-highlight, hr  {
 	@apply mb-8
