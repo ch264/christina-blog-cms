@@ -4,7 +4,11 @@ date: 2019-11-08T18:55:31.656Z
 thumbnail: ./computer.jpeg
 description: This is a tutorial to show you how I setup a manual trigger for a
   GitHub actions workflow with Postman.
-tags: GitHubActions Newman Postman GitHub
+hashtag: 
+ - GitHubActions 
+ - Newman 
+ - Postman 
+ - GitHub
 ---
 ![](computer.jpeg)
 

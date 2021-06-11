@@ -35,7 +35,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </p>
         </header>
         <section
-          className="cms-content"
+          className="cms-content md:px-16 lg:px-24"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
@@ -46,8 +46,8 @@ const BlogPostTemplate = ({ data, location }) => {
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
-        <ul>
+      <nav>
+        <ul className="flex justify-between">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
