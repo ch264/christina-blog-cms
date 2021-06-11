@@ -111,4 +111,4 @@ You can call the script by adding it in your package.json
 ```
 ---
 
-Congratulations! Your Github Actions CI Tool with Markdownlinting has now been successfully setup. You can watch the linter run when pushing code or creating a pull-request to the branch you set in your workflow file.
+Congratulations! 🚀 Your Github Actions CI Tool with Markdownlinting has now been successfully setup. You can watch the linter run when pushing code or creating a pull-request to the branch you set in your workflow file.
