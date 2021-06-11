@@ -1,8 +1,13 @@
 ---
 title: GitHub Actions Markdown lint Setup
 date: 2021-06-10T23:20:52.024Z
-description: This is a tutorial to show you how I set up GitHub Actions for
-  Markdown linting with David Ansons’s Markdownlint library.
+description: This is a tutorial to show you how I set up GitHub Actions for Markdown linting with David Ansons’s Markdownlint library.
+thumbnail: "./tea.jpeg"
+hashtag: 
+- JavaScript
+- Markdown
+- Github Actions
+- Linter
 ---
 ![tea, scissors and keyboard](https://miro.medium.com/max/7528/1*agCoOF8taDQ9mDMhR15t3g.jpeg)
 
