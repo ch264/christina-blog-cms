@@ -4,7 +4,7 @@
 
 
 /* blog post style */
-.cms-content > p {
+.cms-content > p, li {
 	@apply mb-8;
 	@apply font-sans;
 	@apply leading-8;
