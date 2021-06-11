@@ -6,7 +6,7 @@ thumbnail: "./tea.jpeg"
 hashtag: 
 - JavaScript
 - Markdown
-- Github Actions
+- GithubActions
 - Linter
 ---
 ![tea, scissors and keyboard](https://miro.medium.com/max/7528/1*agCoOF8taDQ9mDMhR15t3g.jpeg)
