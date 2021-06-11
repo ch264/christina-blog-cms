@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header className="font-sans">
           <h1 itemProp="headline" className="font-bold font-black mt-12 mb-6 text-5xl">{post.frontmatter.title}</h1>
-          <p className="text-2xl font-thin p-0 mb-8">{post.frontmatter.date} - {post.frontmatter.hashtag ? post.frontmatter.hashtag.map(tag => (` ${tag}`)) : ''} - {post.timeToRead || ''} min read
+          <p className="text-2xl font-thin p-0 mb-8">{post.frontmatter.date} - <span className="text-1l"> {post.frontmatter.hashtag ? post.frontmatter.hashtag.map(tag => (` ${tag}`)) : ''} - {post.timeToRead || ''} min read </span>
             <ShareButtons url={url} title={post.title} description={post.frontmatter.description}/>
           </p>
         </header>
