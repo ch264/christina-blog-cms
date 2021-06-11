@@ -46,8 +46,8 @@ const BlogPostTemplate = ({ data, location }) => {
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
-        <ul>
+      <nav>
+        <ul className="flex justify-between">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
