@@ -6,6 +6,8 @@ description: This is a tutorial to show you how I setup a manual trigger for a
   GitHub actions workflow with Postman.
 tags: GitHubActions Newman Postman GitHub
 ---
+![](computer.jpeg)
+
 Github recently published a UI button to re-run a GitHub Actions workflow file when tests fails. In order to run a GitHub Actions workflow manually I used the GitHub API [repository_dispatch](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows) event to trigger a workflow rerun via Postman.
 
 ## GitHub Action workflow file
@@ -26,7 +28,7 @@ jobs:
       with:
         ref: master
  ...
- ```
+```
 
 ## GitHub Access Token
 
@@ -47,6 +49,7 @@ Give your environment a name and add the Variable name and Value (your GitHub Ac
 Save it and now you can call your variable in your Post Request, which we are going to setup in the steps below.
 
 ## Testing your GitHub API Connection
+
 You can test your Github API Connections by running a Get request in Postman hitting this endpoint:
 
 ```bash
@@ -57,6 +60,7 @@ It will bring back a random quote.
 ![](https://miro.medium.com/max/5328/1*QRUIXBBJZx-Pfcbgc3p4tA.png)
 
 ## Setting up the real deal
+
 Now we can set the environment variables and include the access token as a [variable](https://learning.getpostman.com/docs/postman/environments-and-globals/variables/) in order to authorize ourselves.
 ![](https://miro.medium.com/max/3268/1*XTwaEAWA5N-Evj8DlnALzA.png)
 
@@ -73,9 +77,10 @@ The last step is to include the actual body you are sending to the API. In this 
 ![](https://miro.medium.com/max/5332/1*aKcPkOgWA23Ll5chxdSe2w.png)
 
 ## Et voilà!
+
 Hit send and you will see your GitHub Action kicking off in your repo.
 ![](https://miro.medium.com/max/1400/1*xbDqag7W3CVVlOxDCPZknw.png)
 
----
+- - -
 
 Congratulations! Your manual button to trigger your GitHub Actions workflow has successfully been setup. If you would like to run your Post Request in the command line, you can download [Newman, the Postman Command Line tool](https://learning.getpostman.com/docs/postman/collection-runs/command-line-integration-with-newman/) or you can setup a [monitor in Postman](https://learning.getpostman.com/docs/postman/monitors/setting-up-monitor/) to schedule a run of your new collection.
