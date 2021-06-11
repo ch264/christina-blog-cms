@@ -35,7 +35,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </p>
         </header>
         <section
-          className="cms-content"
+          className="cms-content md:px-16 lg:px-24"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />

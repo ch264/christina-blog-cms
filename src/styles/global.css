@@ -4,6 +4,9 @@
 
 
 /* blog post style */
+/* .cms-content {
+  @apply md:py-8;
+} */
 .cms-content > p, li {
 	@apply mb-8;
 	@apply font-sans;
