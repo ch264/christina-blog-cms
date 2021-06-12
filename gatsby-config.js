@@ -16,6 +16,19 @@ module.exports = {
       },
     },
   plugins:[
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'G-H9LS0KJJKG',
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        alwaysSendReferrer: true,
+        forceSSL: true,
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
