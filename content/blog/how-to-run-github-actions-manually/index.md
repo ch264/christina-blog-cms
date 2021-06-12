@@ -2,8 +2,7 @@
 title: How to run GitHub Actions manually
 date: 2019-11-08T18:55:31.656Z
 thumbnail: ./computer.jpeg
-description: This is a tutorial to show you how I setup a manual trigger for a
-  GitHub actions workflow with Postman.
+description: This is a tutorial to show you how I set up GitHub Actions for Markdown linting with David Ansons’s Markdownlint library.
 hashtag: 
  - GitHubActions 
  - Newman 
@@ -11,6 +10,8 @@ hashtag:
  - GitHub
 ---
 ![](computer.jpeg)
+
+This is a tutorial to show you how I setup a manual trigger for a GitHub actions workflow with Postman.
 
 Github recently published a UI button to re-run a GitHub Actions workflow file when tests fails. In order to run a GitHub Actions workflow manually I used the GitHub API [repository_dispatch](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows) event to trigger a workflow rerun via Postman.
 
