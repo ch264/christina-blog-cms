@@ -1,6 +1,6 @@
 ---
 title: Bye Bye Bash! MacOS Catalina update, moving on to zsh, fixing bugs
-date: 2021-06-03T15:18:34.824Z
+date: 2020-03-20T15:18:34.824Z
 description: "Tutorial: How to debug going from bash to zsh"
 thumbnail: "1__z7rtesdxpuyvgih-t59_w.jpeg"
 hashtag:
