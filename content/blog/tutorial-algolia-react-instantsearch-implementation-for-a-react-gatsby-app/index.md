@@ -1,9 +1,13 @@
 ---
-title: Tutorial: Algolia React InstantSearch implementation for a React Gatsby App
+title: "Tutorial: Algolia React InstantSearch implementation for a React Gatsby App"
 date: 2019-12-03T18:55:31.656Z
 thumbnail: ./image-3.jpeg
-description: Tutorial: Algolia React InstantSearch implementation for a React Gatsby App
-hashtag: [Postman, S3, AWS, API]
+description: "Tutorial: Algolia React InstantSearch implementation for a React Gatsby App"
+hashtag: 
+- Postman
+- S3 
+- AWS
+- API
 ---
 ![](image-3.jpeg)
 
