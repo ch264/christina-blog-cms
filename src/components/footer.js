@@ -1,10 +1,10 @@
 import * as React from "react"
-// import { Heart } from 'react-feather';
+import { Heart } from 'react-feather';
 
 const Footer = () => (
 
-	<footer className="p-6 mt-8 flex">
-        © {new Date().getFullYear()}, Built with 💚 by Christina Hastenrath
+	<footer className="p-6 mt-10 flex">
+        © {new Date().getFullYear()}, Built with  💚 by Christina Hastenrath
         {/* {` `}
         <a href="https://www.gatsbyjs.com" className="font-bold">Gatsby</a> 
         {` `}
