@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const Card = ({title, slug, date, description, hashtag, thumbnail}) => {
 	return (
 		<div className="max-w-sm rounded overflow-hidden shadow-lg mb-3" key={slug}>
-			{ thumbnail && thumbnail.childImageSharp ? ( <img className="w-full" src={`${thumbnail.childImageSharp.fluid.src}`} alt="Mountain" /> ) : ''}
+			{ thumbnail && thumbnail.childImageSharp ? ( <img className="w-full object-cover h-32 sm:h-48 md:h-64" src={`${thumbnail.childImageSharp.fluid.src}`} alt="Mountain" /> ) : ''}
 			<div className="px-6 py-4">
 				<Link to={slug} className="font-bold text-xl mb-2">{title}</Link>
 				<p className="text-gray-700 text-base">

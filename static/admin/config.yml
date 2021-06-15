@@ -23,5 +23,13 @@ collections:
       - { label: 'thumbnail', name: 'thumbnail', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: Hashtag,
+          name: hashtag,
+          widget: list,
+          default: [news],
+          fields:
+          - { label: "Hashtag", name: "hashtag", widget: "string", default: "news" }
+      }
     
 
