@@ -2,13 +2,14 @@
 title: REST APIs in Gatsby at Runtime
 date: 2020-04-23T18:55:31.656Z
 thumbnail: ./computer-6.jpeg
-description: This is a step-by-step tutorial on how to call external REST APIs in Gatsby at runtime using Axios.
-hashtag: 
- - Gatsbyjs
- - REST API
- - Axios 
- - JavaScript
- - React
+description: This is a step-by-step tutorial on how to call external REST APIs
+  in Gatsby at runtime using Axios.
+hashtag:
+  - Gatsbyjs
+  - REST API
+  - Axios
+  - JavaScript
+  - React
 ---
 ![](computer-6.jpeg)
 
@@ -59,6 +60,7 @@ We store the response data in ```this.state```. This way we can use the data in 
 ![](https://miro.medium.com/max/1400/1*trCPv7Ms9V7d1FlwPjZGRA.png)
 
 We now display the data coming back from three different endpoints on three different paths, with one API call and one template. wohoo!
+
 ---
 
 We also wanted to display the data of several endpoints in cards on the index page. Therefore we needed another Axios call.
@@ -73,6 +75,7 @@ Again we get our state variable from the context API with a GraphQL call.
 Run your app with ```$ gatsby develop```. Now we can test the GraphQL call in Postman and check that our Context API is returning the correct response. This is the data we set in *gatsby-node.js*.
 
 ![](https://miro.medium.com/max/1400/1*1rgwogcnPqXzv8FmCsm53Q.png)
+
 We then then pass the data from the GraphQL call into our Class Component, which we define in the same file:
 
 ![](https://miro.medium.com/max/1400/1*QUQeVk5riJHBr7zCuqYgBg.png)
