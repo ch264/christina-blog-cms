@@ -27,9 +27,7 @@ collections:
           label: Hashtag,
           name: hashtag,
           widget: list,
-          default: [news],
-          fields:
-          - { label: "Hashtag", name: "hashtag", widget: "string", default: "news" }
+          default: [news]
       }
     
 
