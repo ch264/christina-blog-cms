@@ -4,7 +4,11 @@ date: 2021-05-14T23:34:44.347Z
 thumbnail: computer-8.jpeg
 description: How to create alias for your most used terminal commands
 hashtag:
-  - news
+  - terminal
+  - zsh
+  - vim
+  - mac
+  - zshrc
 ---
 This is a very short tutorial to show you how can setup shortcuts to your most used terminal commands within seconds.
 
