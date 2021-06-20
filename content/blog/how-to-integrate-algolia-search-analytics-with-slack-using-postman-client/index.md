@@ -4,7 +4,11 @@ date: 2020-05-27T21:07:18.354Z
 thumbnail: beach.jpeg
 description: Easy to follow step-by-step tutorial with lots of pictures
 hashtag:
-  - news
+  - algolia
+  - api
+  - restapi
+  - postman
+  - slack
 ---
 This is a step by step tutorial on how you can get your most searched terms into a Slack channel by using Postman.
 
