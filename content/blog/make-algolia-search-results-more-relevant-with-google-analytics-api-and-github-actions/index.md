@@ -1,10 +1,8 @@
 ---
-title: Make Algolia Search Results More Relevant With Google Analytics API and
-  Github Actions
+title: Make Algolia Search Results More Relevant With Google Analytics API and Github Actions
 date: 2020-08-14T23:41:51.239Z
 thumbnail: motorbike.jpeg
-description: How to get Google Analytics page view data into Algolia records via
-  NodeJS, Github Actions, and Github Secrets
+description: How to get Google Analytics page view data into Algolia records via NodeJS, Github Actions, and Github Secrets
 hashtag:
   - nodejs
   - algolia
