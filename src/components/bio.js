@@ -8,6 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+// import image from "../images/profile-pic.png"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -46,6 +47,8 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
+
+      {/* <img src={image} alt="lovely avatar" className="mr-6 mb-0 rounded-full max-h-50 w-50 max-w-50" /> */}
       {author.name && (
         <p>
           Written by <strong>{author.name}</strong> <br />{author.summary || null }
