@@ -1,9 +1,19 @@
 ---
 title: Testing file uploads to AWS S3 with IAM user credentials in Postman
 date: 2020-11-02T18:55:31.656Z
-thumbnail: "./image-4.jpeg"
+thumbnail: ./image-4.jpeg
 description: "Tutorial: Algolia React InstantSearch implementation for a React Gatsby App"
-tags: [JavaScript, Algolia, ReactInstantsearch, Gatsby, React]
+tags:
+  - JavaScript
+  - Algolia
+  - ReactInstantsearch
+  - Gatsby
+  - React
+hashtag:
+  - aws
+  - postman
+  - s3
+  - api
 ---
 ![](image-4.jpeg)
 
