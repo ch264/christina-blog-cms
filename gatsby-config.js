@@ -34,6 +34,18 @@ module.exports = {
         forceSSL: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: ["/", { regex: "^/" }],
+        excludePaths: ["/"],
+        height: 4,
+        prependToBody: false,
+        color: `#9F32B1`,
+        footerHeight: 500,
+        headerHeight: 0,
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
