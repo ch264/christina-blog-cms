@@ -1,9 +1,14 @@
 module.exports = {
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: {
     title: `Code with Christina 🦄`,
     author: {
       name: `Christina Hastenrath`,
-      summary: `Software Engineer @Postman`,
+      summary: `Software Engineer`,
+      company: {
+        name: `Postman`,
+        url: `https://postman.com`
+      }
     },
     description: `Christina's blog to share learnings`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
@@ -27,6 +32,18 @@ module.exports = {
         respectDNT: true,
         alwaysSendReferrer: true,
         forceSSL: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: ["/", { regex: "^/" }],
+        excludePaths: ["/"],
+        height: 4,
+        prependToBody: false,
+        color: `#9F32B1`,
+        footerHeight: 500,
+        headerHeight: 0,
       },
     },
     `gatsby-plugin-postcss`,

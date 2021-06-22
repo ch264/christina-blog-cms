@@ -16,6 +16,7 @@
     "gatsby-plugin-manifest": "^3.7.0",
     "gatsby-plugin-netlify-cms": "^5.7.0",
     "gatsby-plugin-offline": "^4.7.0",
+    "gatsby-plugin-page-progress": "^2.2.1",
     "gatsby-plugin-react-helmet": "^4.7.0",
     "gatsby-plugin-sharp": "^3.7.0",
     "gatsby-remark-copy-linked-files": "^4.4.0",

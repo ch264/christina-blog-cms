@@ -34,11 +34,11 @@ const Layout = ({ location, title, children }) => {
         <div className="flex sm:mb-0 self-center post-meta-share-icons">
           <a href="https://christinavhastenrath.medium.com/" target="_blank" rel="noopener noreferrer" className="icon"><img className="h-10 p-1" src={medium} alt="medium" /></a>
 
-          <a href="https://www.linkedin.com/in/christinahastenrath/" className="pr-1" target="_blank" rel="noopener noreferrer"><Linkedin strokeWidth={1.00} /></a>
+          <a href="https://www.linkedin.com/in/christinahastenrath/" className="pr-1" target="_blank" rel="noopener noreferrer" aria-label="button"><Linkedin strokeWidth={1.00} /></a>
 
-          <a href="https://twitter.com/etTinchen" className="pr-1" target="_blank" rel="noopener noreferrer"><Twitter strokeWidth={1.00} /></a>
+          <a href="https://twitter.com/etTinchen" className="pr-1" target="_blank" rel="noopener noreferrer" aria-label="button"><Twitter strokeWidth={1.00} /></a>
   
-          <a href="https://github.com/ch264" target="_blank" rel="noopener noreferrer"><GitHub strokeWidth={1.00} /></a>
+          <a href="https://github.com/ch264" target="_blank" rel="noopener noreferrer" aria-label="button"><GitHub strokeWidth={1.00} /></a>
 
 
           <a href="https://stackoverflow.com/users/11683537/c-dev" target="_blank" rel="noopener noreferrer" className="icon"><img className="h-9 pb-1 pt-1" src={stackoverflow} alt="stackoverflow" /></a>
