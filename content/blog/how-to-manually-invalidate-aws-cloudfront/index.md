@@ -5,7 +5,11 @@ thumbnail: computer-7.jpeg
 description: This is a short and sweet tutorial on how you can clear cache and
   invalidated AWS CloudFront in 3 simple manual steps.
 hashtag:
-  - news
+  - aws
+  - cloudfront
+  - validation
+  - s3
+  - cache
 ---
 Invalidating objects removes them from the CloudFront edge cache. You can also invalidate single files with the aws-cli. This post will not got into this option but you can read more about invalidating via aws-cli in the AWS docs.
 

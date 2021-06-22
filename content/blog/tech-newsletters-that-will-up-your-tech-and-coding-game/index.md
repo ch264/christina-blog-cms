@@ -18,20 +18,20 @@ hashtag:
 
 🚀 The following collection of newsletters I would recommend to anyone interested in coding and tech. Here are my top newsletters I would highly recommend following if you want to up your tech and coding game 🎲
 
-# Javascript
+## Javascript
 
 1. [Go make things](https://gomakethings.com/) by Chris Ferdinandi. You can get daily JavaScript tips with code examples. Chris has a great way of explaining and offers the perfect daily JavaScript snacks.
 2. [JavaScript Weekly](https://javascriptweekly.com/). This is a fantastic newsletter for all news around JavaScript.
 
-# React
+## React
 
 1. [Kent C. Dodds](https://kentcdodds.com/subscribe/) has a newsletter showcasing his newest blog posts. Always 100% worth the read.
 
-# APIs
+## APIs
 
 1. [API security](https://apisecurity.io/) is about the latest API Security News, Vulnerabilities & Best Practices
 
-# **JAMStack**
+## JAMStack
 
 1. [Bejamas](https://bejamas.io/resources/) has a fantastic newsletter, blog and resources for JAMStack
 
@@ -39,7 +39,7 @@ hashtag:
 
 1. [Smashing Magazines](https://www.smashingmagazine.com/the-smashing-newsletter/) sends you weekly updates on a variety of frontend and UX news.
 
-# Tech
+## Tech
 
 1. [Gary’s Guide](https://www.garysguide.com/events?region=sfbay) for San Francisco and/or NYC will give you a fantastic overview of all news in tech, start-ups, IPOs, and events.
 2. [Hacker Newsletter](https://hackernewsletter.com/) weekly newsletter showcasing the best articles in tech, start-ups, and programming
