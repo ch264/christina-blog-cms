@@ -17,6 +17,10 @@ const Bio = () => {
           author {
             name
             summary
+            company {
+              name
+              url
+            }
           }
           social {
             twitter
@@ -31,9 +35,9 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio mb-16  flex flex-row">
+    <div className="bio mb-16 flex flex-row">
       <StaticImage
-        className="bio-avatar mr-6 mb-0 rounded-full h-50 w-50 min-w-50"
+        className="bio-avatar mr-6 mb-0 rounded-full h-50 w-50 max-w-50"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
         src="../images/profile-pic.png"
@@ -42,19 +46,20 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
-      {author?.name && (
-        <p className="">
-          Written by <strong>{author.name}</strong> <br></br>{author?.summary || null}
-          {` `}
-          <span role="img">👩‍🚀</span>
-          {` `}
+      {author.name && (
+        <p>
+          Written by <strong>{author.name}</strong> <br />{author.summary || null }
+          {' '}
+          <a href={author.company.url}> @{author.company.name}</a>
+          {' '}
+          <span role="img" aria-label="astronaut-emoji">👩‍🚀</span>
+          {' '}
           <a href={`https://twitter.com/${social.twitter}`}>
-            Follow me on Twitter for more tech content <span role="img">🙌</span>
-          </a>
+          Follow me on Twitter for more tech content <span role="img" aria-label="hands-celebration-emoji">🙌</span></a>
         </p>
       )}
     </div>
   )
 }
 
-export default Bio
+export default Bio;
